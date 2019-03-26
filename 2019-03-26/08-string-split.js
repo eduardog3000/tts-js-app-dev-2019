@@ -4,3 +4,6 @@ const names = [
   'Danica',
   'Dale, Jr.',
 ];
+
+console.log(names.join(',').split(','))
+console.log(names.join('SPLIT HERE').split('SPLIT HERE'))

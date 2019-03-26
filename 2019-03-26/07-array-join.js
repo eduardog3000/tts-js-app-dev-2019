@@ -2,3 +2,9 @@ const cards = ['A♥', '7♥', '6♥', '10♣', '9♣', '5♣', '2♣', 'J♠', 
 
 console.log(cards);
 // TODO output cards joined into a string
+console.log(cards.join())
+console.log(cards.join(', '))
+console.log(cards.join(' '))
+console.log(cards.join('\n'))
+console.log(cards.join(''))
+console.log(cards.join(' and '))

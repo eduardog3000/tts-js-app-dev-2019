@@ -1,5 +1,5 @@
-// const coefficients = [3, -5, 4].reverse();
-const coefficients = [4, -5, 3];
+const coefficients = [3, -5, 4].reverse();
+//const coefficients = [4, -5, 3];
 
 const x = parseFloat(process.argv[2] || 0); // command line option
 let y = 0;

@@ -6,3 +6,4 @@ console.log(cards);
 console.log(options);
 
 // TODO for each item in options, output whether or not cards includes the option
+options.forEach(o => console.log(`${o} is${cards.indexOf(o) != -1 ? '' : ' not'} in cards`));
