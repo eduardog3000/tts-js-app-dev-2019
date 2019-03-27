@@ -21,7 +21,7 @@ for (let i = 0; i < examples.length; i += 1) {
   // initialize gotFixed for n digits
   var gotFixed = getFixed(example, n);
   // initialize gotString
-  var gotString = example.toString();
+  var gotString = getString(example);
   // within one console.log statement use ternary to output shorter string
   console.log(gotFixed.length < gotString.length ? gotFixed : gotString);
 }

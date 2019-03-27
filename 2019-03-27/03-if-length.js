@@ -21,7 +21,7 @@ for (let i = 0; i < examples.length; i += 1) {
   // initialize gotFixed for n digits
   let gotFixed = getFixed(example, n);
   // initialize gotString
-  let gotString = example.toString();
+  let gotString = getString(example);
   // if length of gotFixed is less than length of gotString
   if(gotFixed.length < gotString.length) {
     // then output gotFixed
