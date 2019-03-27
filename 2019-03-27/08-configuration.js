@@ -1,7 +1,16 @@
 // Given number and configuration object for noun,
 // return phrase for that number of the noun.
-const getPluralizer = (number, configuration) =>
-  `${number} TODO`;
+/*const getPluralizer = (number, configuration) =>
+  `${number}`;*/
+
+const pluralize = (number, config) =>
+  config.suffix != undefined ? pluralizeSuffix(number, config) : pluralizeIrreg(number, config);
+
+const pluralizeSuffix = (number, config) =>
+  `${number} ${config.singular}${number === 1 ? '' : config.suffix}`;
+
+const pluralizeIrreg = (number, config) =>
+  `${number} ${number === 1 ? config.singular : config.plural}`;
 
 const thing = {
   singular: 'thing',

@@ -18,7 +18,10 @@ const n = 3;
 for (let i = 0; i < examples.length; i += 1) {
   const example = examples[i];
 
-  // TODO initialize gotFixed for n digits
-  // TODO initialize gotString
-  // TODO within one console.log statement use ternary to output shorter string
+  // initialize gotFixed for n digits
+  var gotFixed = getFixed(example, n);
+  // initialize gotString
+  var gotString = example.toString();
+  // within one console.log statement use ternary to output shorter string
+  console.log(gotFixed.length < gotString.length ? gotFixed : gotString);
 }
