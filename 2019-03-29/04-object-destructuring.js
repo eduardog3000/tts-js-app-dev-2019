@@ -10,10 +10,9 @@ const getFixer = nDigits => coordinate => {
 
 const stringifyCoordinate = getFixer(4);
 
-const stringifyPoint = point => `${stringifyCoordinate(point.x)},${stringifyCoordinate(point.y)}`;
-/*
+//const stringifyPoint = point => `${stringifyCoordinate(point.x)},${stringifyCoordinate(point.y)}`;
+
 const stringifyPoint = ({x, y}) => `${stringifyCoordinate(x)},${stringifyCoordinate(y)}`;
-*/
 
 // Given input data as arrays of objects:
 const inputs = [

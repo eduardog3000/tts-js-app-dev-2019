@@ -8,7 +8,7 @@ const getFixer = nDigits => coordinate => {
   return gotFixed.length < gotString.length ? gotFixed : gotString;
 };
 
-const stringifyCoordinate = getFixer(4);
+const stringifyCoordinate = getFixer(1);
 
 const stringifyPoints = points => points.map(
   ({x, y}) => `${stringifyCoordinate(x)},${stringifyCoordinate(y)}`

@@ -22,12 +22,8 @@ console.log(filteredAll);
 const filteredNone = items.filter(item => false);
 console.log(filteredNone);
 
-/*
-const filteredCompleted = items.filter(item => TODO);
+const filteredCompleted = items.filter(item => item.completed);
 console.log(filteredCompleted);
-*/
 
-/*
-const filteredUncompleted = items.filter(item => TODO);
+const filteredUncompleted = items.filter(item => !item.completed);
 console.log(filteredUncompleted);
-*/
